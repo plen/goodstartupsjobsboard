@@ -2,7 +2,14 @@ Goodstartupsjobsboard::Application.routes.draw do
   
   devise_for :users
 
-  root to: "home#index"
+  root to: "static_pages#home"
+  
+  match '/ads', to: "ads#index"
+  match '/ads/new', to: "ads#new"
+  match '/ads/edit', to: "ads#edit"
+  
+  match '/about', to: "static_pages#about"
+  match '/contact', to: "static_pages#contact"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
