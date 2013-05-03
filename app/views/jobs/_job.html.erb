@@ -1,0 +1,13 @@
+<div>
+Company Name: <%= job.company_name %><br />
+Company Logo Image: <%= job.company_logo_image %><br />
+Job Title: <%= job.job_title %><br />
+Job Description: <%= job.job_description %><br />
+Job Application Details: <%= job.job_application_details %><br />
+Job Category: <%= job.job_category %><br />
+<span class="timestamp">
+  Posted <%= time_ago_in_words(job.created_at) %> ago.
+</span>
+</div>
+
+<br><br><br>

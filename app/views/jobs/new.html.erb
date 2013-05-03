@@ -1,0 +1,20 @@
+<h2>This is the page for a new post</h2>
+
+<%= form_for(@job) do |listing| %>
+  <%= listing.label :company_name %>
+  <%= listing.text_field :company_name %>
+  
+  <%= listing.label :company_logo_image %>
+  <%= listing.text_field :company_logo_image %>
+  
+  <%= listing.label :job_title %>
+  <%= listing.text_field :job_title %>
+  
+  <%= listing.label :job_description %>
+  <%= listing.text_field :job_description %>
+  
+  <%= listing.label :job_application_details %>
+  <%= listing.text_field :job_application_details %>
+  
+  <%= listing.submit "Create my job" %>
+<% end %>

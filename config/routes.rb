@@ -4,9 +4,10 @@ Goodstartupsjobsboard::Application.routes.draw do
 
   root to: "static_pages#home"
   
-  match '/ads', to: "ads#index"
-  match '/ads/new', to: "ads#new"
-  match '/ads/edit', to: "ads#edit"
+  match '/jobs', to: "jobs#create", via: :post
+  match '/jobs', to: "jobs#index"
+  match '/jobs/new', to: "jobs#new"
+  match '/jobs/edit', to: "jobs#edit"
   
   match '/about', to: "static_pages#about"
   match '/contact', to: "static_pages#contact"
