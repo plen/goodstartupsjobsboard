@@ -4,9 +4,6 @@
   <%= listing.label :company_name %>
   <%= listing.text_field :company_name %>
   
-  <%= listing.label :company_logo_image %>
-  <%= listing.text_field :company_logo_image %>
-  
   <%= listing.label :job_title %>
   <%= listing.text_field :job_title %>
   
@@ -15,6 +12,9 @@
   
   <%= listing.label :job_application_details %>
   <%= listing.text_field :job_application_details %>
+  
+  <%= listing.label :company_logo_image, "Company Logo" %>
+  <%= listing.file_field :company_logo_image %>
   
   <%= listing.submit "Create my job" %>
 <% end %>

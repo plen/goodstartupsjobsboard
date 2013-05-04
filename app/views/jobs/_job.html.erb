@@ -1,6 +1,6 @@
 <div>
 Company Name: <%= job.company_name %><br />
-Company Logo Image: <%= job.company_logo_image %><br />
+<%= image_tag job.company_logo_image.url(:square) %><br />
 Job Title: <%= job.job_title %><br />
 Job Description: <%= job.job_description %><br />
 Job Application Details: <%= job.job_application_details %><br />

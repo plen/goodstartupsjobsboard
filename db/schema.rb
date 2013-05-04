@@ -11,18 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130503073113) do
+ActiveRecord::Schema.define(:version => 20130504000928) do
 
   create_table "jobs", :force => true do |t|
     t.integer  "user_id"
     t.string   "job_title"
     t.string   "company_name"
-    t.string   "company_logo_image"
     t.string   "job_description"
     t.string   "job_application_details"
     t.string   "job_category"
-    t.datetime "created_at",              :null => false
-    t.datetime "updated_at",              :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.string   "company_logo_image_file_name"
+    t.string   "company_logo_image_content_type"
+    t.integer  "company_logo_image_file_size"
+    t.datetime "company_logo_image_updated_at"
   end
 
   create_table "users", :force => true do |t|
