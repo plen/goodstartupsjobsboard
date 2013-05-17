@@ -16,3 +16,4 @@
 
 # Ignore amazon environmental variables
 /config/initializers/aws.rb
+/config/aws.yml
